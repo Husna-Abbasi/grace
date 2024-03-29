@@ -18,22 +18,32 @@ import React from "react";
  * @param {ButtonComponentProps} props - Props for the ButtonComponent.
  * @returns {JSX.Element}
  */
-const ButtonComponent = ( {backgroundColor,color,hoverColor,label, size = 'w-10', onClick, icon, className, children}) => {
+const ButtonComponent = ({
+                             backgroundColor,
+                             color,
+                             hoverColor,
+                             label,
+                             size = 'w-10',
+                             onClick,
+                             icon,
+                             className,
+                             children
+                         }) => {
     const buttonStyle = {
         backgroundColor: backgroundColor,
-        color:color,
-        hoverColor:hoverColor,
+        color: color,
+        hoverColor: hoverColor,
     };
     return (<button
-        className={`${size} ${hoverColor} ${className} rounded-md flex items-center font-poppins justify-evenly`}
-        value="Submit"
-        style={buttonStyle}
-        onClick={onClick}
-    >
-        {children}
-        {icon}
-        {label}
-    </button>
+            className={`${size} ${hoverColor} ${className} rounded-md flex items-center font-poppins justify-evenly`}
+            value="Submit"
+            style={buttonStyle}
+            onClick={onClick}
+        >
+            {children}
+            {icon}
+            {label}
+        </button>
     )
 };
 export default ButtonComponent;
