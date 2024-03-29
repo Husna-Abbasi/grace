@@ -1,19 +1,19 @@
 import {Skeleton} from "antd";
 import {useState} from "react";
 
-const CardSkeletonComponent = ({ width, height }) => {
+const CardSkeletonComponent = ({width, height}) => {
     const [active] = useState(true);
     const [size] = useState('small');
     const [avatarShape] = useState('square');
     return (
-        <div style={{ width, height }}>
+        <div style={{width, height}}>
             <div className="flex flex-col gap-2 hidden md:block ">
-                    <Skeleton.Node
-                        active={active}
-                        style={{
-                            height: '200px',
-                            width: '300px',
-                        }}/>
+                <Skeleton.Node
+                    active={active}
+                    style={{
+                        height: '200px',
+                        width: '300px',
+                    }}/>
                 <div className="flex justify-center items-center flex-col pt-2">
                     <Skeleton.Input
                         active={active}
