@@ -3,9 +3,8 @@ import React from 'react';
 const LoadingButtonComponent = (props) => {
     const {className, size, color} = props;
 
-    return (
-        <button disabled type="button"
-                className={`${size} text-white ${color} ${className} rounded-md text-center mr-2 inline-flex items-center justify-center`}>
+    return (<button disabled type="button"
+                    className={`${size} text-white ${color} ${className} rounded-md text-center mr-2 inline-flex items-center justify-center`}>
             <svg aria-hidden="true" role="status" className="inline w-4 h-4 mr-3 text-white animate-spin"
                  viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -16,8 +15,7 @@ const LoadingButtonComponent = (props) => {
                     fill="currentColor"/>
             </svg>
             Please wait...
-        </button>
-    );
+        </button>);
 };
 
 export default LoadingButtonComponent;
