@@ -1,6 +1,5 @@
 import {Skeleton} from "antd";
 import {useState} from "react";
-
 const CardSkeletonComponent = ({width, height}) => {
     const [active] = useState(true);
     const [size] = useState('small');
@@ -76,7 +75,6 @@ const CardSkeletonComponent = ({width, height}) => {
                         size={size}
                         shape={avatarShape}
                     />
-
                 </div>
             </div>
         </div>);
