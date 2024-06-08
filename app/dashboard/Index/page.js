@@ -181,7 +181,7 @@ function classNames(...classes) {
 
 export default function Example() {
     const [open, setOpen] = useState(false)
-
+console.log('test')
     return (
         <div className="bg-white">
             {/* Mobile menu */}
