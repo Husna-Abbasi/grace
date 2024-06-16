@@ -18,7 +18,7 @@ const FooterComponent = () => {
                         <li className="hover:opacity-60 pb-1">About Us</li>
                         <li className="hover:opacity-60 pb-1">Contact Us</li>
                         <li className="hover:opacity-60 pb-1">Become a Teacher</li>
-                        <li className="hover:opacity-60 pb-1">Privacy Policy</li>
+                        {/*<li className="hover:opacity-60 pb-1">Privacy Policy</li>*/}
                         <li className="hover:opacity-60 pb-1">Terms of Service</li>
                     </ul>
                 </div>
