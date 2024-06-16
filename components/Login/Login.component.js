@@ -7,7 +7,6 @@ import {useRouter} from "next/navigation";
 import LoadingButtonComponent from "../../components/Button/Loading-Button.component";
 
 const LoginComponent = ({onLoginSuccess}) => {
-    const dispatch = useDispatch();
     const [loginButtonLoading, setLoginButtonLoading] = useState(false);
     const [emailAddress, setEmailAddress] = useState('')
     const [password, setPassword] = useState('')
