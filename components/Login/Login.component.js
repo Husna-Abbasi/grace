@@ -29,7 +29,7 @@ const LoginComponent = ({onLoginSuccess}) => {
 
             if (userData.role === "admin") {
 
-                await router.push('/admin/dashboard')
+                await router.push('/dashboard')
             }
             if (userData.role === "user") {
                 await router.push('/page')
