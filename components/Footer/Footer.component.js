@@ -4,7 +4,8 @@ import {FaFacebookSquare, FaInstagram, FaTwitter} from "react-icons/fa";
 const FooterComponent = () => {
     return (
         <footer className="bg-[#93c7ff]">
-            <div className="container flex justify-between pl-10 md:pl-24 pt-7 pb-8 flex-nowrap flex-col md:flex-row gap-3">
+            <div
+                className="container flex justify-between pl-10 md:pl-24 pt-7 pb-8 flex-nowrap flex-col md:flex-row gap-3">
                 <div>
                     <h3 className="text-sm font-semibold mb-3 text-[#303030]">Recommended Resources</h3>
                     <ul className="list-none p-0 text-xs text-grey cursor-pointer flex flex-col gap-[2px] font-extralight">
@@ -32,20 +33,21 @@ const FooterComponent = () => {
                     <h3 className="text-xs font-bold mb-3 text-[#303030]">Social Networks</h3>
                     <div className="flex text-grey text-2xl">
                         <a href="components/Footer#https://www.facebook.com/" className="mr-3">
-                            <i><FaFacebookSquare className="hover:opacity-100 opacity-60" />
+                            <i><FaFacebookSquare className="hover:opacity-100 opacity-60"/>
                             </i>
                         </a>
                         <a href="components/Footer#https://www.instagram.com/" className="mr-3">
-                            <i><FaInstagram className="hover:opacity-100 opacity-60" />
+                            <i><FaInstagram className="hover:opacity-100 opacity-60"/>
                             </i>
                         </a>
                         <a href="components/Footer#https://www.twitter.com/" className="mr-4 ">
-                            <i><FaTwitter className="hover:opacity-100 opacity-60" />
+                            <i><FaTwitter className="hover:opacity-100 opacity-60"/>
                             </i>
                         </a>
                     </div>
                     <div className="pt-6 w-72">
-                        <p className="text-[11px] text-[#303030] ">Copyright 2023 Flying Languages. All right reserved.</p>
+                        <p className="text-[11px] text-[#303030] ">Copyright 2023 Flying Languages. All right
+                            reserved.</p>
                     </div>
                 </div>
             </div>
