@@ -14,8 +14,8 @@
   ```
 */
 'use client'
-import { Fragment, useState } from 'react'
-import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
+import {Fragment, useState} from 'react'
+import {Dialog, Popover, Tab, Transition} from '@headlessui/react'
 import {
     Bars3Icon,
     MagnifyingGlassIcon,
@@ -23,7 +23,7 @@ import {
     ShoppingBagIcon,
     XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import {ChevronDownIcon} from '@heroicons/react/20/solid'
 
 const currencies = ['CAD', 'USD', 'AUD', 'EUR', 'GBP']
 const navigation = {
@@ -89,8 +89,8 @@ const navigation = {
         },
     ],
     pages: [
-        { name: 'Company', href: '#' },
-        { name: 'Stores', href: '#' },
+        {name: 'Company', href: '#'},
+        {name: 'Stores', href: '#'},
     ],
 }
 const collections = [
@@ -150,28 +150,28 @@ const perks = [
 ]
 const footerNavigation = {
     products: [
-        { name: 'Bags', href: '#' },
-        { name: 'Tees', href: '#' },
-        { name: 'Objects', href: '#' },
-        { name: 'Home Goods', href: '#' },
-        { name: 'Accessories', href: '#' },
+        {name: 'Bags', href: '#'},
+        {name: 'Tees', href: '#'},
+        {name: 'Objects', href: '#'},
+        {name: 'Home Goods', href: '#'},
+        {name: 'Accessories', href: '#'},
     ],
     company: [
-        { name: 'Who we are', href: '#' },
-        { name: 'Sustainability', href: '#' },
-        { name: 'Press', href: '#' },
-        { name: 'Careers', href: '#' },
-        { name: 'Terms & Conditions', href: '#' },
-        { name: 'Privacy', href: '#' },
+        {name: 'Who we are', href: '#'},
+        {name: 'Sustainability', href: '#'},
+        {name: 'Press', href: '#'},
+        {name: 'Careers', href: '#'},
+        {name: 'Terms & Conditions', href: '#'},
+        {name: 'Privacy', href: '#'},
     ],
     customerService: [
-        { name: 'Contact', href: '#' },
-        { name: 'Shipping', href: '#' },
-        { name: 'Returns', href: '#' },
-        { name: 'Warranty', href: '#' },
-        { name: 'Secure Payments', href: '#' },
-        { name: 'FAQ', href: '#' },
-        { name: 'Find a store', href: '#' },
+        {name: 'Contact', href: '#'},
+        {name: 'Shipping', href: '#'},
+        {name: 'Returns', href: '#'},
+        {name: 'Warranty', href: '#'},
+        {name: 'Secure Payments', href: '#'},
+        {name: 'FAQ', href: '#'},
+        {name: 'Find a store', href: '#'},
     ],
 }
 
@@ -181,7 +181,7 @@ function classNames(...classes) {
 
 export default function Example() {
     const [open, setOpen] = useState(false)
-console.log('test')
+    console.log('test')
     return (
         <div className="bg-white">
             {/* Mobile menu */}
@@ -196,7 +196,7 @@ console.log('test')
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0"
                     >
-                        <div className="fixed inset-0 bg-black bg-opacity-25" />
+                        <div className="fixed inset-0 bg-black bg-opacity-25"/>
                     </Transition.Child>
 
                     <div className="fixed inset-0 z-40 flex">
@@ -209,7 +209,8 @@ console.log('test')
                             leaveFrom="translate-x-0"
                             leaveTo="-translate-x-full"
                         >
-                            <Dialog.Panel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl">
+                            <Dialog.Panel
+                                className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl">
                                 <div className="flex px-4 pb-2 pt-5">
                                     <button
                                         type="button"
@@ -217,7 +218,7 @@ console.log('test')
                                         onClick={() => setOpen(false)}
                                     >
                                         <span className="sr-only">Close menu</span>
-                                        <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                                        <XMarkIcon className="h-6 w-6" aria-hidden="true"/>
                                     </button>
                                 </div>
 
@@ -228,7 +229,7 @@ console.log('test')
                                             {navigation.categories.map((category) => (
                                                 <Tab
                                                     key={category.name}
-                                                    className={({ selected }) =>
+                                                    className={({selected}) =>
                                                         classNames(
                                                             selected ? 'border-indigo-600 text-indigo-600' : 'border-transparent text-gray-900',
                                                             'flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium'
@@ -246,14 +247,19 @@ console.log('test')
                                                 <div className="grid grid-cols-2 gap-x-4 gap-y-10">
                                                     {category.featured.map((item) => (
                                                         <div key={item.name} className="group relative">
-                                                            <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
-                                                                <img src={item.imageSrc} alt={item.imageAlt} className="object-cover object-center" />
+                                                            <div
+                                                                className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
+                                                                <img src={item.imageSrc} alt={item.imageAlt}
+                                                                     className="object-cover object-center"/>
                                                             </div>
-                                                            <a href={item.href} className="mt-6 block text-sm font-medium text-gray-900">
-                                                                <span className="absolute inset-0 z-10" aria-hidden="true" />
+                                                            <a href={item.href}
+                                                               className="mt-6 block text-sm font-medium text-gray-900">
+                                                                <span className="absolute inset-0 z-10"
+                                                                      aria-hidden="true"/>
                                                                 {item.name}
                                                             </a>
-                                                            <p aria-hidden="true" className="mt-1 text-sm text-gray-500">
+                                                            <p aria-hidden="true"
+                                                               className="mt-1 text-sm text-gray-500">
                                                                 Shop now
                                                             </p>
                                                         </div>
@@ -294,7 +300,8 @@ console.log('test')
                                             <label htmlFor="mobile-currency" className="sr-only">
                                                 Currency
                                             </label>
-                                            <div className="group relative -ml-2 rounded-md border-transparent focus-within:ring-2 focus-within:ring-white">
+                                            <div
+                                                className="group relative -ml-2 rounded-md border-transparent focus-within:ring-2 focus-within:ring-white">
                                                 <select
                                                     id="mobile-currency"
                                                     name="currency"
@@ -304,8 +311,10 @@ console.log('test')
                                                         <option key={currency}>{currency}</option>
                                                     ))}
                                                 </select>
-                                                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center">
-                                                    <ChevronDownIcon className="h-5 w-5 text-gray-500" aria-hidden="true" />
+                                                <div
+                                                    className="pointer-events-none absolute inset-y-0 right-0 flex items-center">
+                                                    <ChevronDownIcon className="h-5 w-5 text-gray-500"
+                                                                     aria-hidden="true"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -328,7 +337,8 @@ console.log('test')
                                     <label htmlFor="desktop-currency" className="sr-only">
                                         Currency
                                     </label>
-                                    <div className="group relative -ml-2 rounded-md border-transparent bg-gray-900 focus-within:ring-2 focus-within:ring-white">
+                                    <div
+                                        className="group relative -ml-2 rounded-md border-transparent bg-gray-900 focus-within:ring-2 focus-within:ring-white">
                                         <select
                                             id="desktop-currency"
                                             name="currency"
@@ -338,8 +348,9 @@ console.log('test')
                                                 <option key={currency}>{currency}</option>
                                             ))}
                                         </select>
-                                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center">
-                                            <ChevronDownIcon className="h-5 w-5 text-gray-300" aria-hidden="true" />
+                                        <div
+                                            className="pointer-events-none absolute inset-y-0 right-0 flex items-center">
+                                            <ChevronDownIcon className="h-5 w-5 text-gray-300" aria-hidden="true"/>
                                         </div>
                                     </div>
                                 </div>
@@ -378,7 +389,7 @@ console.log('test')
                                         <div className="flex h-full justify-center space-x-8">
                                             {navigation.categories.map((category) => (
                                                 <Popover key={category.name} className="flex">
-                                                    {({ open }) => (
+                                                    {({open}) => (
                                                         <>
                                                             <div className="relative flex">
                                                                 <Popover.Button
@@ -407,9 +418,12 @@ console.log('test')
                                                                 leaveFrom="opacity-100"
                                                                 leaveTo="opacity-0"
                                                             >
-                                                                <Popover.Panel className="absolute inset-x-0 top-full z-10 bg-white text-sm text-gray-500">
+                                                                <Popover.Panel
+                                                                    className="absolute inset-x-0 top-full z-10 bg-white text-sm text-gray-500">
                                                                     {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
-                                                                    <div className="absolute inset-0 top-1/2 bg-white shadow" aria-hidden="true" />
+                                                                    <div
+                                                                        className="absolute inset-0 top-1/2 bg-white shadow"
+                                                                        aria-hidden="true"/>
                                                                     {/* Fake border when menu is open */}
                                                                     <div
                                                                         className="absolute inset-0 top-0 mx-auto h-px max-w-7xl px-8"
@@ -424,22 +438,30 @@ console.log('test')
                                                                     </div>
 
                                                                     <div className="relative">
-                                                                        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                                                                            <div className="grid grid-cols-4 gap-x-8 gap-y-10 py-16">
+                                                                        <div
+                                                                            className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                                                                            <div
+                                                                                className="grid grid-cols-4 gap-x-8 gap-y-10 py-16">
                                                                                 {category.featured.map((item) => (
-                                                                                    <div key={item.name} className="group relative">
-                                                                                        <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
+                                                                                    <div key={item.name}
+                                                                                         className="group relative">
+                                                                                        <div
+                                                                                            className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
                                                                                             <img
                                                                                                 src={item.imageSrc}
                                                                                                 alt={item.imageAlt}
                                                                                                 className="object-cover object-center"
                                                                                             />
                                                                                         </div>
-                                                                                        <a href={item.href} className="mt-4 block font-medium text-gray-900">
-                                                                                            <span className="absolute inset-0 z-10" aria-hidden="true" />
+                                                                                        <a href={item.href}
+                                                                                           className="mt-4 block font-medium text-gray-900">
+                                                                                            <span
+                                                                                                className="absolute inset-0 z-10"
+                                                                                                aria-hidden="true"/>
                                                                                             {item.name}
                                                                                         </a>
-                                                                                        <p aria-hidden="true" className="mt-1">
+                                                                                        <p aria-hidden="true"
+                                                                                           className="mt-1">
                                                                                             Shop now
                                                                                         </p>
                                                                                     </div>
@@ -475,13 +497,13 @@ console.log('test')
                                         onClick={() => setOpen(true)}
                                     >
                                         <span className="sr-only">Open menu</span>
-                                        <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                                        <Bars3Icon className="h-6 w-6" aria-hidden="true"/>
                                     </button>
 
                                     {/* Search */}
                                     <a href="#" className="ml-2 p-2 text-gray-400 hover:text-gray-500">
                                         <span className="sr-only">Search</span>
-                                        <MagnifyingGlassIcon className="h-6 w-6" aria-hidden="true" />
+                                        <MagnifyingGlassIcon className="h-6 w-6" aria-hidden="true"/>
                                     </a>
                                 </div>
 
@@ -496,7 +518,8 @@ console.log('test')
                                 </a>
 
                                 <div className="flex flex-1 items-center justify-end">
-                                    <a href="#" className="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block">
+                                    <a href="#"
+                                       className="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block">
                                         Search
                                     </a>
 
@@ -504,9 +527,10 @@ console.log('test')
                                         {/* Help */}
                                         <a href="#" className="p-2 text-gray-400 hover:text-gray-500 lg:hidden">
                                             <span className="sr-only">Help</span>
-                                            <QuestionMarkCircleIcon className="h-6 w-6" aria-hidden="true" />
+                                            <QuestionMarkCircleIcon className="h-6 w-6" aria-hidden="true"/>
                                         </a>
-                                        <a href="#" className="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block">
+                                        <a href="#"
+                                           className="hidden text-sm font-medium text-gray-700 hover:text-gray-800 lg:block">
                                             Help
                                         </a>
 
@@ -517,7 +541,8 @@ console.log('test')
                                                     className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                                                     aria-hidden="true"
                                                 />
-                                                <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
+                                                <span
+                                                    className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
                                                 <span className="sr-only">items in cart, view bag</span>
                                             </a>
                                         </div>
@@ -542,9 +567,9 @@ console.log('test')
                                     className="h-full w-full object-cover object-center"
                                 />
                             </div>
-                            <div className="absolute inset-0 bg-gray-900 opacity-50" />
+                            <div className="absolute inset-0 bg-gray-900 opacity-50"/>
                         </div>
-                        <div className="h-32 w-full bg-white md:h-40 lg:h-48" />
+                        <div className="h-32 w-full bg-white md:h-40 lg:h-48"/>
                     </div>
 
                     <div className="relative mx-auto max-w-3xl px-4 pb-96 text-center sm:px-6 sm:pb-0 lg:px-8">
@@ -558,12 +583,13 @@ console.log('test')
                                         className="h-full w-full object-cover object-center"
                                     />
                                 </div>
-                                <div className="absolute inset-0 bg-gray-900 opacity-50" />
+                                <div className="absolute inset-0 bg-gray-900 opacity-50"/>
                             </div>
-                            <div className="h-48 w-full bg-white" />
+                            <div className="h-48 w-full bg-white"/>
                         </div>
                         <div className="relative py-32">
-                            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Mid-Season Sale</h1>
+                            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">Mid-Season
+                                Sale</h1>
                             <div className="mt-4 sm:mt-6">
                                 <a
                                     href="#"
@@ -579,7 +605,8 @@ console.log('test')
                         <h2 id="collection-heading" className="sr-only">
                             Collections
                         </h2>
-                        <div className="mx-auto grid max-w-md grid-cols-1 gap-y-6 px-4 sm:max-w-7xl sm:grid-cols-3 sm:gap-x-6 sm:gap-y-0 sm:px-6 lg:gap-x-8 lg:px-8">
+                        <div
+                            className="mx-auto grid max-w-md grid-cols-1 gap-y-6 px-4 sm:max-w-7xl sm:grid-cols-3 sm:gap-x-6 sm:gap-y-0 sm:px-6 lg:gap-x-8 lg:px-8">
                             {collections.map((collection) => (
                                 <div
                                     key={collection.name}
@@ -594,7 +621,8 @@ console.log('test')
                                                     className="h-full w-full object-cover object-center"
                                                 />
                                             </div>
-                                            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50" />
+                                            <div
+                                                className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"/>
                                         </div>
                                         <div className="absolute inset-0 flex items-end rounded-lg p-6">
                                             <div>
@@ -603,7 +631,7 @@ console.log('test')
                                                 </p>
                                                 <h3 className="mt-1 font-semibold text-white">
                                                     <a href={collection.href}>
-                                                        <span className="absolute inset-0" />
+                                                        <span className="absolute inset-0"/>
                                                         {collection.name}
                                                     </a>
                                                 </h3>
@@ -622,16 +650,19 @@ console.log('test')
                             <h2 id="favorites-heading" className="text-2xl font-bold tracking-tight text-gray-900">
                                 Trending Products
                             </h2>
-                            <a href="#" className="hidden text-sm font-medium text-indigo-600 hover:text-indigo-500 md:block">
+                            <a href="#"
+                               className="hidden text-sm font-medium text-indigo-600 hover:text-indigo-500 md:block">
                                 Shop the collection
                                 <span aria-hidden="true"> &rarr;</span>
                             </a>
                         </div>
 
-                        <div className="mt-6 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-6 md:grid-cols-4 md:gap-y-0 lg:gap-x-8">
+                        <div
+                            className="mt-6 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-6 md:grid-cols-4 md:gap-y-0 lg:gap-x-8">
                             {trendingProducts.map((product) => (
                                 <div key={product.id} className="group relative">
-                                    <div className="h-56 w-full overflow-hidden rounded-md group-hover:opacity-75 lg:h-72 xl:h-80">
+                                    <div
+                                        className="h-56 w-full overflow-hidden rounded-md group-hover:opacity-75 lg:h-72 xl:h-80">
                                         <img
                                             src={product.imageSrc}
                                             alt={product.imageAlt}
@@ -640,7 +671,7 @@ console.log('test')
                                     </div>
                                     <h3 className="mt-4 text-sm text-gray-700">
                                         <a href={product.href}>
-                                            <span className="absolute inset-0" />
+                                            <span className="absolute inset-0"/>
                                             {product.name}
                                         </a>
                                     </h3>
@@ -665,7 +696,8 @@ console.log('test')
                     </h2>
 
                     <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
-                        <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-0">
+                        <div
+                            className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-0">
                             {perks.map((perk) => (
                                 <div
                                     key={perk.name}
@@ -673,7 +705,7 @@ console.log('test')
                                 >
                                     <div className="md:flex-shrink-0">
                                         <div className="flow-root">
-                                            <img className="-my-1 mx-auto h-24 w-auto" src={perk.imageUrl} alt="" />
+                                            <img className="-my-1 mx-auto h-24 w-auto" src={perk.imageUrl} alt=""/>
                                         </div>
                                     </div>
                                     <div className="mt-6 md:ml-4 md:mt-0 lg:ml-0 lg:mt-6">
@@ -693,7 +725,8 @@ console.log('test')
                 </h2>
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="border-t border-gray-200 py-20">
-                        <div className="grid grid-cols-1 md:grid-flow-col md:auto-rows-min md:grid-cols-12 md:gap-x-8 md:gap-y-16">
+                        <div
+                            className="grid grid-cols-1 md:grid-flow-col md:auto-rows-min md:grid-cols-12 md:gap-x-8 md:gap-y-16">
                             {/* Image section */}
                             <div className="col-span-1 md:col-span-2 lg:col-start-1 lg:row-start-1">
                                 <img
@@ -704,7 +737,8 @@ console.log('test')
                             </div>
 
                             {/* Sitemap sections */}
-                            <div className="col-span-6 mt-10 grid grid-cols-2 gap-8 sm:grid-cols-3 md:col-span-8 md:col-start-3 md:row-start-1 md:mt-0 lg:col-span-6 lg:col-start-2">
+                            <div
+                                className="col-span-6 mt-10 grid grid-cols-2 gap-8 sm:grid-cols-3 md:col-span-8 md:col-start-3 md:row-start-1 md:mt-0 lg:col-span-6 lg:col-start-2">
                                 <div className="grid grid-cols-1 gap-y-12 sm:col-span-2 sm:grid-cols-2 sm:gap-x-8">
                                     <div>
                                         <h3 className="text-sm font-medium text-gray-900">Products</h3>
@@ -746,9 +780,11 @@ console.log('test')
                             </div>
 
                             {/* Newsletter section */}
-                            <div className="mt-12 md:col-span-8 md:col-start-3 md:row-start-2 md:mt-0 lg:col-span-4 lg:col-start-9 lg:row-start-1">
+                            <div
+                                className="mt-12 md:col-span-8 md:col-start-3 md:row-start-2 md:mt-0 lg:col-span-4 lg:col-start-9 lg:row-start-1">
                                 <h3 className="text-sm font-medium text-gray-900">Sign up for our newsletter</h3>
-                                <p className="mt-6 text-sm text-gray-500">The latest deals and savings, sent to your inbox weekly.</p>
+                                <p className="mt-6 text-sm text-gray-500">The latest deals and savings, sent to your
+                                    inbox weekly.</p>
                                 <form className="mt-2 flex sm:max-w-md">
                                     <label htmlFor="email-address" className="sr-only">
                                         Email address
