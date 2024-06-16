@@ -94,12 +94,6 @@ const LoginComponent = ({onLoginSuccess}) => {
                                 className="bg-blueS shadow-sm px-[20px] py-[8px] w-full text-white font-semibold text-[18px] rounded-[5px]"
 
                             />}
-                        {/*   <button
-                        className="flex items-center bg-white text-slate-700 p-2 rounded-md border border-gray-300 hover:border-gray-400 focus:outline-none focus:shadow-outline-gray"
-                    >
-                        <FaGoogle className="mr-2" />
-                        Continue with Google
-                    </button>*/}
                     </div>
                 </form>
             </div>
