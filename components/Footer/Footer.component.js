@@ -14,7 +14,6 @@ const FooterComponent = () => {
                 <div>
                     <h3 className="text-sm font-semibold mb-3 text-[#303030]">Quick Links</h3>
                     <ul className="list-none p-0 text-grey cursor-pointer font-extralight text-xs flex flex-col gap-[2px]">
-                        <li className="hover:opacity-60 pb-1">Pricing</li>
                         <li className="hover:opacity-60 pb-1">About Us</li>
                         <li className="hover:opacity-60 pb-1">Contact Us</li>
                         <li className="hover:opacity-60 pb-1">Become a Teacher</li>
