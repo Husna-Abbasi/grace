@@ -9,13 +9,6 @@ const FooterComponent = () => {
                 <div>
                     <h3 className="text-sm font-semibold mb-3 text-[#303030]">Recommended Resources</h3>
                     <ul className="list-none p-0 text-xs text-grey cursor-pointer flex flex-col gap-[2px] font-extralight">
-                        <li className="hover:opacity-60 pb-1">Spanish Resources</li>
-                        <li className="hover:opacity-60 pb-1">Italian Resources</li>
-                        <li className="hover:opacity-60 pb-1">French Resources</li>
-                        <li className="hover:opacity-60 pb-1">German Resources</li>
-                        <li className="hover:opacity-60 pb-1">Russian Resources</li>
-                        <li className="hover:opacity-60 pb-1">Portuguese Resources</li>
-                        <li className="hover:opacity-60 pb-1">ESL Resources</li>
                     </ul>
                 </div>
                 <div>
