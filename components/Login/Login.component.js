@@ -4,9 +4,6 @@ import ButtonComponent from "../../components/Button/Button.component";
 import Image from "next/image";
 import logo1 from '../../public/logo1.svg';
 import {useRouter} from "next/navigation";
-import {getUserDataApi, loginApi} from "@/store/api/user.api";
-import {loginSuccess} from "@/store/actions/api.action";
-import {useDispatch} from "react-redux";
 import LoadingButtonComponent from "../../components/Button/Loading-Button.component";
 
 const LoginComponent = ({onLoginSuccess}) => {
