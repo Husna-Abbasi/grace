@@ -13,7 +13,8 @@ const BecomeMemberComponent = ({title, description, signInTitle, signInDescripti
                         backgroundColor="bg-blueS "
                         label="Register an Account"
                         className="bg-blueS shadow-sm px-[20px] py-[13px] w-full text-white font-semibold text-[18px] rounded-[5px]"
-                    /></div>
+                    />
+                </div>
 
                 <div className=" flex flex-col gap-4">
                     <h1 className="text-xl font-bold text-blues">{signInTitle}</h1>
