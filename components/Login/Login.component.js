@@ -22,6 +22,7 @@ const LoginComponent = ({onLoginSuccess}) => {
             const userData = await getUserDataApi(access_token);
             dispatch(loginSuccess(access_token, userData));
             localStorage.setItem('access_token', access_token);
+
             if (userData.role === "admin") {
 
                 await router.push('/dashboard')
