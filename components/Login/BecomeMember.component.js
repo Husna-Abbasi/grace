@@ -18,6 +18,7 @@ const BecomeMemberComponent = ({title, description, signInTitle, signInDescripti
                 <div className=" flex flex-col gap-4">
                     <h1 className="text-xl font-bold text-blues">{signInTitle}</h1>
                     <p className="text-slate-600">{signInDescription}</p>
+
                     <ButtonComponent
                         backgroundColor="bg-blueS "
                         label="Continue with google"
