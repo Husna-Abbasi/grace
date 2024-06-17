@@ -24,7 +24,6 @@ const LoginComponent = ({onLoginSuccess}) => {
             localStorage.setItem('access_token', access_token);
 
             if (userData.role === "admin") {
-
                 await router.push('/dashboard')
             }
             if (userData.role === "user") {
