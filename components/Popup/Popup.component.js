@@ -39,7 +39,6 @@ const Popup = ({children, title, showPopup, setShowPopup, showFooter = true}) =>
                                         Close
                                     </button>
                                 </div>
-
                                 }
                             </div>
                         </div>
