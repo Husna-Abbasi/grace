@@ -13,6 +13,7 @@ const Popup = ({children, title, showPopup, setShowPopup, showFooter = true}) =>
                         {/*header*/}
                         <div className="flex  justify-between rounded-t px-10 pt-5 items-center">
                             <h3 className="text-sm font-semibold text-gray-400 ">{title}</h3>
+
                             <button
                                 className="bg-transparent border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                                 onClick={() => setShowPopup(false)}>
