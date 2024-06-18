@@ -7,7 +7,9 @@ const FooterComponent = () => {
             <div
                 className="container flex justify-between pl-10 md:pl-24 pt-7 pb-8 flex-nowrap flex-col md:flex-row gap-3">
                 <div>
-                    <h3 className="text-sm font-semibold mb-3 text-[#303030]">Recommended Resources</h3>
+                    <h3 className="text-sm font-semibold mb-3 text-[#303030]">
+                        Recommended Resources
+                    </h3>
                     <ul className="list-none p-0 text-xs text-grey cursor-pointer flex flex-col gap-[2px] font-extralight">
                     </ul>
                 </div>
