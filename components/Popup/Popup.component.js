@@ -35,7 +35,6 @@ const Popup = ({children, title, showPopup, setShowPopup, showFooter = true}) =>
                                 onClick={() => setShowPopup(false)}
                             >
                                 Close
-
                             </button>
                         </div>
                         }
