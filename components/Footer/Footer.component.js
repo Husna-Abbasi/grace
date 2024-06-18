@@ -39,7 +39,8 @@ const FooterComponent = () => {
                     </div>
                     <div className="pt-6 w-72">
                         <p className="text-[11px] text-[#303030] ">
-                            Copyright 2023 Flying Languages. All right reserved.</p>
+                            Copyright 2023 Flying Languages. All right reserved.
+                        </p>
                     </div>
                 </div>
             </div>
