@@ -25,7 +25,6 @@ const Popup = ({children, title, showPopup, setShowPopup, showFooter = true}) =>
                         {/*body*/}
                         <div className="relative px-6 pb-6 flex-auto">
                             {children}
-
                         </div>
                         {/*footer*/}
                         {showFooter && <div
