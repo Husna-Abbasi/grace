@@ -28,7 +28,6 @@ const Popup = ({children, title, showPopup, setShowPopup, showFooter = true}) =>
 
                                 </div>
                                 {/*footer*/}
-
                                 {showFooter && <div
                                     className="flex items-center justify-end p-4 border-t border-solid border-slate-200 rounded-b">
                                     <button
