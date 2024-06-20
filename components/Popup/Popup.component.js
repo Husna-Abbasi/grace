@@ -20,6 +20,7 @@ const Popup = ({children, title, showPopup, setShowPopup, showFooter = true}) =>
                         className="flex justify-center items-center bg-transparent text-slate-700 h-6 w-6 text-2xl block outline-none focus:outline-none">
                       ×
                     </span>
+                                
                             </button>
                         </div>
                         {/*body*/}
