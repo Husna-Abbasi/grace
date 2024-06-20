@@ -47,7 +47,8 @@ const Popup = ({children, title, showPopup, setShowPopup, showFooter = true}) =>
             <div className="opacity-70 fixed inset-0 z-40 bg-black"></div>
         </>
         ) : null}
-    </>);
+    </>
+    );
 };
 
 export default Popup;
