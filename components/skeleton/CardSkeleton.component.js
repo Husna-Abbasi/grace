@@ -23,6 +23,7 @@ const CardSkeletonComponent = ({width, height}) => {
                             height: '13px',
                             width: '300px',
                         }}/>
+
                     <Skeleton.Input
                         active={active}
                         style={{
