@@ -1,7 +1,8 @@
 import React from 'react';
 
 const Popup = ({children, title, showPopup, setShowPopup, showFooter = true}) => {
-    return (<>
+    return (
+        <>
         {showPopup ? (
             <>
             <div
