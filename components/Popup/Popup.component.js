@@ -2,7 +2,8 @@ import React from 'react';
 
 const Popup = ({children, title, showPopup, setShowPopup, showFooter = true}) => {
     return (<>
-        {showPopup ? (<>
+        {showPopup ? (
+            <>
             <div
                 className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
             >
@@ -20,7 +21,7 @@ const Popup = ({children, title, showPopup, setShowPopup, showFooter = true}) =>
                         className="flex justify-center items-center bg-transparent text-slate-700 h-6 w-6 text-2xl block outline-none focus:outline-none">
                       ×
                     </span>
-                                
+
                             </button>
                         </div>
                         {/*body*/}
