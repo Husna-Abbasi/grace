@@ -45,7 +45,6 @@ const CardSkeletonComponent = ({width, height}) => {
                         style={{
                             height: '30px',
                         }}/>
-
                     <Skeleton.Button
                         active={active}
                         style={{
