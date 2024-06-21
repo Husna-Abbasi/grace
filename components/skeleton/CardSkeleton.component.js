@@ -83,7 +83,6 @@ const CardSkeletonComponent = ({width, height}) => {
                         size={size}
                         shape={avatarShape}
                     />
-
                     <Skeleton.Avatar
                         active={active}
                         size={size}
