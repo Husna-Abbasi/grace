@@ -16,6 +16,7 @@ const LoginComponent = ({onLoginSuccess}) => {
     async function handleLogin(event) {
         event.preventDefault()
         setError('');
+
         try {
             setLoginButtonLoading(true);
             const {access_token} = await loginApi(emailAddress, password);
@@ -30,7 +31,7 @@ const LoginComponent = ({onLoginSuccess}) => {
                 await router.push('/page')
             }
             onLoginSuccess(userData);
-            
+
         } catch (error) {
             setLoginButtonLoading(false);
             if (error.response && error.response.status === 404) {
