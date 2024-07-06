@@ -66,6 +66,7 @@ const LoginComponent = ({onLoginSuccess}) => {
                         <label htmlFor="password" className="block text-slate-700 text-sm font-semibold mb-2">
                             Password
                         </label>
+
                         <input
                             type="password"
                             id="password"
