@@ -20,7 +20,6 @@ const LoginComponent = ({onLoginSuccess}) => {
             setLoginButtonLoading(true);
             const {access_token} = await loginApi(emailAddress, password);
             const userData = await getUserDataApi(access_token);
-
             dispatch(loginSuccess(access_token, userData));
             localStorage.setItem('access_token', access_token);
             if (userData.role === "admin") {
