@@ -53,6 +53,7 @@ const LoginComponent = ({onLoginSuccess}) => {
                         <label htmlFor="email" className="block text-slate-700 text-sm font-semibold mb-2">
                             Email
                         </label>
+
                         <input
                             type="email"
                             id="email"
