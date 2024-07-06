@@ -29,6 +29,7 @@ const LoginComponent = ({onLoginSuccess}) => {
             if (userData.role === "user") {
                 await router.push('/page')
             }
+
             onLoginSuccess(userData);
 
         } catch (error) {
