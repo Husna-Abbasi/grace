@@ -46,6 +46,7 @@ const LoginComponent = ({onLoginSuccess}) => {
         <div className="flex items-center justify-center bg-grey-50 w-[300px]">
             <div className=" w-full p-2 bg-white">
                 <div className="flex justify-center">
+
                     <Image src={logo1} alt="logo1" className="w-20 h-auto lg:w-20 lg:h-auto"/>
                 </div>
                 <form onSubmit={handleLogin}>
