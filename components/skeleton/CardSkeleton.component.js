@@ -89,7 +89,6 @@ const CardSkeletonComponent = ({width, height}) => {
                         size={size}
                         shape={avatarShape}
                     />
-
                 </div>
             </div>
         </div>
