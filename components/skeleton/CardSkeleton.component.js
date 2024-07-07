@@ -70,6 +70,7 @@ const CardSkeletonComponent = ({width, height}) => {
                                 height: '10px',
                                 width: '340px',
                             }}/>
+
                     </div>
                 </div>
                 <div className="flex gap-1 justify-around">
