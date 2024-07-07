@@ -8,6 +8,7 @@ const CardSkeletonComponent = ({width, height}) => {
     const [avatarShape] = useState('square');
     return (
         <div style={{width, height}}>
+
             <div className="flex flex-col gap-2  md:block mb-4">
                 <Skeleton.Node
                     active={active}
