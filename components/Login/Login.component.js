@@ -49,6 +49,7 @@ const LoginComponent = ({onLoginSuccess}) => {
                     <Image src={logo1} alt="logo1" className="w-20 h-auto lg:w-20 lg:h-auto"/>
                 </div>
                 <form onSubmit={handleLogin}>
+
                     <div className="mb-4">
                         <label htmlFor="email" className="block text-slate-700 text-sm font-semibold mb-2">
                             Email
