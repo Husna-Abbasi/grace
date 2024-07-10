@@ -15,6 +15,7 @@ const CardSkeletonComponent = ({width, height}) => {
                         height: '200px',
                         width: '300px',
                     }}/>
+
                 <div className="flex justify-center items-center flex-col pt-2">
                     <Skeleton.Input
                         active={active}
@@ -49,7 +50,6 @@ const CardSkeletonComponent = ({width, height}) => {
                 </div>
             </div>
             {/*//Mobile view*/}
-
             <div className="flex flex-col gap-1 md:hidden w-full overflow-hidden justify-center mb-4">
                 <div className="flex flex-col gap-2 items-center justify-center">
                     <Skeleton.Node
