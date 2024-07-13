@@ -29,6 +29,7 @@ const CardSkeletonComponent = ({width, height}) => {
                             width: '300px',
                         }}/>
                 </div>
+
                 <div className="flex gap-4 justify-between pt-2">
                     <Skeleton.Button
                         active={active}
