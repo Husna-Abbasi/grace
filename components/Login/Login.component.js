@@ -86,7 +86,6 @@ const LoginComponent = ({onLoginSuccess}) => {
                                 label="Login"
                                 Type="submit"
                                 className="bg-blueS shadow-sm px-[20px] py-[8px] w-full text-white font-semibold text-[18px] rounded-[5px]"
-
                             />}
                     </div>
                 </form>
