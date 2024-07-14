@@ -2,7 +2,9 @@ import React from 'react';
 import ButtonComponent from "../../components/Button/Button.component";
 
 const BecomeMemberComponent = (
-    {title, description, signInTitle, signInDescription}) => {
+    {
+        title,
+        description, signInTitle, signInDescription}) => {
     return (
         <div className="flex items-center justify-center ">
             <div className="bg-white p-8 w-96 flex flex-col gap-7 rounded">
