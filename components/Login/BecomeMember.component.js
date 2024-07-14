@@ -1,8 +1,7 @@
 import React from 'react';
 import ButtonComponent from "../../components/Button/Button.component";
 
-const BecomeMemberComponent = (
-    {
+const BecomeMemberComponent = ({
         title,
         description,
         signInTitle,
