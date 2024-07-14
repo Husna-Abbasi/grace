@@ -6,7 +6,8 @@ const BecomeMemberComponent = (
         title,
         description,
         signInTitle,
-        signInDescription}) => {
+        signInDescription
+    }) => {
     return (
         <div className="flex items-center justify-center ">
             <div className="bg-white p-8 w-96 flex flex-col gap-7 rounded">
