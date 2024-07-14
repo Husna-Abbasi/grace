@@ -30,10 +30,8 @@ const LoginComponent = ({onLoginSuccess}) => {
                 await router.push('/page')
             }
             onLoginSuccess(userData);
-
         } catch (error) {
             setLoginButtonLoading(false);
-
             if (error.response && error.response.status === 404) {
                 setError('');
             } else {
