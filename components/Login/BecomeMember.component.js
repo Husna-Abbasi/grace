@@ -13,6 +13,7 @@ const BecomeMemberComponent = ({
                 <div className="flex flex-col gap-4">
                     <h1 className="text-xl font-bold text-blues">{title}</h1>
                     <p className="text-slate-600 text-sm">{description}</p>
+
                     <ButtonComponent
                         backgroundColor="bg-blueS "
                         label="Register an Account"
