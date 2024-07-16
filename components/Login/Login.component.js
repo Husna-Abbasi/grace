@@ -90,7 +90,6 @@ const LoginComponent = ({onLoginSuccess}) => {
                                 className="bg-blueS shadow-sm px-[20px] py-[8px] w-full text-white font-semibold text-[18px] rounded-[5px]"
                             />}
                     </div>
-
                 </form>
             </div>
         </div>
