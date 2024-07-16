@@ -28,6 +28,7 @@ const BecomeMemberComponent = ({
                         label="Continue with google"
                         className="bg-blueS shadow-sm px-[20px] py-[13px] w-full text-white font-semibold text-[18px] rounded-[5px]"
                     />
+
                 </div>
             </div>
         </div>
