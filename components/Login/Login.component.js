@@ -73,7 +73,6 @@ const LoginComponent = ({onLoginSuccess}) => {
                         />
                         {error && <p className="text-red-500 text-sm">{error}</p>}
                     </div>
-
                     <div className="mt-2 flex flex-col gap-3">
                         {loginButtonLoading ?
                             <LoadingButtonComponent
