@@ -72,7 +72,6 @@ const CardSkeletonComponent = ({width, height}) => {
                             }}/>
                     </div>
                 </div>
-
                 <div className="flex gap-1 justify-around">
                     <Skeleton.Avatar
                         active={active}
