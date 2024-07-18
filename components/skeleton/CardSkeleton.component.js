@@ -15,7 +15,6 @@ const CardSkeletonComponent = ({width, height}) => {
                         height: '200px',
                         width: '300px',
                     }}/>
-
                 <div className="flex justify-center items-center flex-col pt-2">
                     <Skeleton.Input
                         active={active}
