@@ -47,7 +47,6 @@ const CardSkeletonComponent = ({width, height}) => {
                         style={{
                             height: '30px',
                         }}/>
-
                 </div>
             </div>
             {/*//Mobile view*/}
