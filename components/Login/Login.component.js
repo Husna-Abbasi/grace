@@ -16,6 +16,7 @@ const LoginComponent = ({onLoginSuccess}) => {
     async function handleLogin(event) {
         event.preventDefault()
         setError('');
+
         try {
             setLoginButtonLoading(true);
             const {access_token} = await loginApi(emailAddress, password);
