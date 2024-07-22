@@ -13,7 +13,6 @@ const FooterComponent = () => {
                     <ul className="list-none p-0 text-xs text-grey cursor-pointer flex flex-col gap-[2px] font-extralight">
                     </ul>
                 </div>
-
                 <div>
                     <h3 className="text-sm font-semibold mb-3 text-[#303030]">Quick Links</h3>
                     <ul className="list-none p-0 text-grey cursor-pointer font-extralight text-xs flex flex-col gap-[2px]">
