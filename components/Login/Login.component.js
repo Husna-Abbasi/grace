@@ -42,6 +42,7 @@ const LoginComponent = ({onLoginSuccess}) => {
 
     return (
         <div className="flex items-center justify-center bg-grey-50 w-[300px]">
+
             <div className=" w-full p-2 bg-white">
                 <div className="flex justify-center">
                     <Image src={logo1} alt="logo1" className="w-20 h-auto lg:w-20 lg:h-auto"/>
@@ -58,7 +59,7 @@ const LoginComponent = ({onLoginSuccess}) => {
                             onChange={(e) => {
                                 setEmailAddress(e.target.value)
                             }}/>
-                        
+
                     </div>
                     <div className="mb-4">
                         <label htmlFor="password" className="block text-slate-700 text-sm font-semibold mb-2">
