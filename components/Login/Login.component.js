@@ -58,6 +58,7 @@ const LoginComponent = ({onLoginSuccess}) => {
                             onChange={(e) => {
                                 setEmailAddress(e.target.value)
                             }}/>
+                        
                     </div>
                     <div className="mb-4">
                         <label htmlFor="password" className="block text-slate-700 text-sm font-semibold mb-2">
