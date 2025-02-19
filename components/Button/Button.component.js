@@ -35,7 +35,7 @@ const ButtonComponent = ({
         hoverColor: hoverColor,
     };
     return (<button
-            className={`${size} ${hoverColor} ${className} rounded-md flex items-center font-poppins justify-evenly`}
+            className={`${size} ${hoverColor} ${className} rounded-md  flex items-center font-poppins justify-evenly`}
             value="Submit"
             style={buttonStyle}
             onClick={onClick}
