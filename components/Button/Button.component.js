@@ -10,7 +10,6 @@ import React from "react";
  * @property {string} [hoverColor] - Background color of the button on hover.
  * @property {JSX.Element} [icon] - Icon element to be displayed before the label.
  * @property {string} [className] - Additional custom CSS classes for styling.
- * @property {React.ReactNode} [children] - Additional children elements if needed.
  */
 
 /**
