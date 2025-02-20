@@ -11,7 +11,6 @@ import React from "react";
  * @property {JSX.Element} [icon] - Icon element to be displayed before the label.
  * @property {string} [className] - Additional custom CSS classes for styling.
  */
-
 /**
  * ButtonComponent
  * @param {ButtonComponentProps} props - Props for the ButtonComponent.
