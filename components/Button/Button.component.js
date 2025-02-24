@@ -7,7 +7,6 @@ import React from "react";
  * @property {string} color - Text color of the button.
  * @property {string} [size='w-10'] - Size of the button (default: 'w-10').
  * @property {Function} onClick - Callback function invoked when the button is clicked.
- * @property {string} [hoverColor] - Background color of the button on hover.
  */
 /**
  * ButtonComponent
