@@ -7,6 +7,7 @@ import React from "react";
  * @property {string} color - Text color of the button.
  * @property {string} [size='w-10'] - Size of the button (default: 'w-10').
  /**
+
  * ButtonComponent
  * @param {ButtonComponentProps} props - Props for the ButtonComponent.
  * @returns {JSX.Element}
