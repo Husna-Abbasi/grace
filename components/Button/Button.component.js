@@ -24,9 +24,7 @@ const ButtonComponent = ({
                              children
                          }) => {
     const buttonStyle = {
-        backgroundColor: backgroundColor,
-        color: color,
-        hoverColor: hoverColor,
+        backgroundColor: backgroundColor, color: color, hoverColor: hoverColor,
     };
     return (<button
             className={`${size} ${hoverColor} ${className} rounded-md flex items-center font-poppins justify-evenly`}
@@ -37,7 +35,6 @@ const ButtonComponent = ({
             {children}
             {icon}
             {label}
-        </button>
-    )
+        </button>)
 };
 export default ButtonComponent;
