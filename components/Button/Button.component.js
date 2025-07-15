@@ -34,7 +34,8 @@ const ButtonComponent = ({
         {children}
         {icon}
         {label}
-    </button>)
+    </button>
+    )
 };
 
 export default ButtonComponent;
