@@ -21,7 +21,8 @@ const ButtonComponent = ({
                              icon,
                              className,
                              children
-                         }) => {
+                         }) =>
+{
     const buttonStyle = {
         backgroundColor: backgroundColor, color: color, hoverColor: hoverColor,
     };
