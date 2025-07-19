@@ -18,7 +18,6 @@ const ButtonComponent = ({
                              label,
                              size = 'w-10',
                              onClick,
-
                              icon,
                              className,
                              children
